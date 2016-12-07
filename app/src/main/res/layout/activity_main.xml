@@ -17,8 +17,27 @@
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="0dp"
+            android:orientation="vertical"
             android:layout_height="match_parent">
-
+            <RadioGroup
+                android:id="@+id/rdg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rdbLondon"
+                android:text="London"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rdbBlijng"
+                android:text="Blijing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rdbNewyork"
+                android:text="Newyork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
             android:layout_weight="1"
