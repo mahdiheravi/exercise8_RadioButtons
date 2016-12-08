@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         rgbBeijing = (RadioButton) findViewById(R.id.rdbBlijng);
         rgbNewyork = (RadioButton) findViewById(R.id.rdbNewyork);
 
-        CheckBox chkTrans = (CheckBox) findViewById(R.id.chkTrsnsparent);
-        CheckBox chkVisible = (CheckBox) findViewById(R.id.chkVisibility);
+        final CheckBox chkTrans = (CheckBox) findViewById(R.id.chkTrsnsparent);
+        final CheckBox chkVisible = (CheckBox) findViewById(R.id.chkVisibility);
 
         final ImageView IV = (ImageView) findViewById(R.id.IVpic);
 
@@ -43,6 +43,23 @@ public class MainActivity extends AppCompatActivity {
                     IV.setImageResource(getResources().getIdentifier("newyork","drawable",getPackageName()));
 
                 }
+                if (chkTrans.isChecked())
+                {
+                    IV.setAlpha(0.5f);
+                }
+                else
+                {
+                    IV.setAlpha(1f);
+                }
+                if (chkVisible.isChecked())
+                {
+                    IV.setVisibility(View.INVISIBLE);
+                }
+                else
+                {
+                    IV.setVisibility(View.INVISIBLE);
+                }
+
 
             }
         });
