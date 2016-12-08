@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if (chkVisible.isChecked())
                 {
-                    IV.setVisibility(View.INVISIBLE);
+                    IV.setVisibility(View.VISIBLE);
                 }
                 else
                 {
